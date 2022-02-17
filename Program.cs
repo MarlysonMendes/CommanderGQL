@@ -9,7 +9,10 @@ builder.Services.AddPooledDbContextFactory<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("CommandConStr"));
 });
-builder.Services.AddGraphQLServer().AddQueryType<Query>();
+builder.Services
+.AddGraphQLServer()
+.AddQueryType<Query>()
+.AddProjections();
 
 var app = builder.Build();
 app.UseRouting();
@@ -20,6 +23,6 @@ app.UseEndpoints(endpoints =>
 app.UseGraphQLVoyager(new VoyagerOptions()
 {
     GraphQLEndPoint = "/graphql"
-}, "/graphiql-voyager");
+}, "/graphql-voyager");
 
 app.Run();
