@@ -5,7 +5,7 @@ using GraphQL.Server.Ui.Voyager;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<AppDbContext>(options =>
+builder.Services.AddPooledDbContextFactory<AppDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("CommandConStr"));
 });
