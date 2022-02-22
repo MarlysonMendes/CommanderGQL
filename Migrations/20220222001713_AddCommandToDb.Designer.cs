@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CommanderGQL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220217061854_AddCommandToDb")]
+    [Migration("20220222001713_AddCommandToDb")]
     partial class AddCommandToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -58,7 +58,6 @@ namespace CommanderGQL.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("LicenseKey")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
