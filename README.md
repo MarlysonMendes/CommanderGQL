@@ -26,7 +26,7 @@
 <p> Salvar uma tecnologia no banco de dados e associar comandos a elas e realizar diversos modelos consultas e alterações neles através de uma API </p>
  
  <h3 name="Demostração"> Demostração</h3>
-  <img alt=""  src="./Asserts/Esquema.png />
+  <img alt=""  src="./assets/Esquema.jpg" />
   
   <h3 name="Pre-requisitos" >Pré-requisitos</h3>
   <p>Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:</p>
