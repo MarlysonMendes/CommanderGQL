@@ -48,4 +48,4 @@
  <p>Esse repositório está licenciado pela MIT LICENSE. Para mais informações detalhadas, leia o arquivo <a href="https://github.com/MarlysonMendes/TestMinimalAPI/blob/main/LICENSE">LICENSE</a> contido nesse repositório.</p>
  
  <h3 name = "conclusao"> Conclusão </h3>
- <p>Apesar da implementação ser mais complexa as APIs que usam o GraphQL ganham no quesito de corrigir o over e underfetching </p>
+ <p>Apesar da implementação ser mais complexa as APIs que usam o GraphQL podem de corrigir problemas de over e underfetching </p>
